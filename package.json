@@ -1,0 +1,66 @@
+{
+  "name": "github-pkg-npm",
+  "version": "0.1.0",
+  "description": "",
+  "main": "build/index.js",
+  "platform": "node",
+  "files": [
+    "build"
+  ],
+  "prettier": {
+    "parser": "typescript",
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es6": true
+    },
+    "extends": [
+      "plugin:@typescript-eslint/recommended",
+      "prettier",
+      "prettier/@typescript-eslint"
+    ],
+    "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+    },
+    "plugins": [
+      "@typescript-eslint/eslint-plugin"
+    ],
+    "rules": {}
+  },
+  "scripts": {
+    "start": "node-ts-scripts start",
+    "build": "node-ts-scripts bundle"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heineiuo/github-pkg-npm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heineiuo/github-pkg-npm/issues"
+  },
+  "homepage": "https://github.com/heineiuo/github-pkg-npm#readme",
+  "devDependencies": {
+    "node-ts-scripts": "^0.7.0"
+  },
+  "dependencies": {
+    "gunzip-maybe": "^1.4.1",
+    "http-errors": "^1.7.3",
+    "node-fetch": "^2.6.0",
+    "semver": "^7.1.3",
+    "tar-stream": "^2.1.2"
+  }
+}
