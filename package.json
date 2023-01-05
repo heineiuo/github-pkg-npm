@@ -54,7 +54,7 @@
   },
   "homepage": "https://github.com/heineiuo/github-pkg-npm#readme",
   "devDependencies": {
-    "node-ts-scripts": "^0.7.0"
+    "node-ts-scripts": "^0.27.2"
   },
   "dependencies": {
     "gunzip-maybe": "^1.4.1",
